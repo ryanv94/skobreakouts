@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seating Arrangement</title>
+    <!-- Bulma CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .table-map {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .table {
+            border: 2px solid #00d1b2;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+        .table-number {
+            background-color: #ff5100;
+            color: rgb(0, 13, 190);
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        img.logo {
+            max-width: 30%;
+            margin-bottom: 5px;
+            color: white;
+            display: block;
+            margin: auto;
+        }
+        .names {
+            font-size: 1em;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+        }
+        @media screen and (max-width: 768px) {
+            .table {
+                width: 120px;
+                height: 120px;
+            }
+            .table-number {
+                font-size: 0.7em;
+            }
+            /* img.logo {
+                width: 30px;
+                height: 30px;
+            } */
+            .names {
+                font-size: 0.6em;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .table-map {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .footer {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column">
+                    <img src="skoLogo.png" style="max-width: 100%; align-self: center;">
+                </div>
+                <div class="column"></div>
+              </div>
+            
+
+            <div class="table-map">
+                <!-- Add tables with team logos and names -->
+                <div class="table">
+                    <div class="table-number">Table 1 - Red Bull Racing</div>
+                    <img src="redbull.png" alt="Red Bull Racing" class="logo">
+                    <ul class="names">
+                        <li>Chris Hardie</li>
+                        <li>Mathias Weber</li>
+                        <li>João Amancio Neto</li>
+                        <li>Stig Joeran Skilbred</li>
+                        <li>Nathan Miller</li>
+                        <li>Thomas Ilunga</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 2 - McLaren</div>
+                    <img src="mclaren.png" alt="McLaren" class="logo">
+                    <ul class="names">
+                        <li>Anjitha Johnson</li>
+                        <li>Dave Kirby</li>
+                        <li>Fiona Casey</li>
+                        <li>Oisin McColgan</li>
+                        <li>James Foley</li>
+                        <li>Angel Igie</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 3 - Ferrari</div>
+                    <img src="ferrari.png" alt="Ferrari" class="logo">
+                    <ul class="names">
+                        <li>Marc Engall</li>
+                        <li>Laura Krohn</li>
+                        <li>Talha Shafqat</li>
+                        <li>Silas Sundar</li>
+                        <li>Gonçalo Toscano</li>
+                        <li>Agnieszka Bajdor</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 4 - Mercedes</div>
+                    <img src="mercedes.png" alt="Mercedes" class="logo">
+                    <ul class="names">
+                        <li>Sam Stiles</li>
+                        <li>Mobolaji Sanusi</li>
+                        <li>Dylan Meyer</li>
+                        <li>Oliver Hunt</li>
+                        <li>Omar Ascanio Arias</li>
+                        <li>Douglas Burns</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 5 - Williams</div>
+                    <img src="williams.png" alt="Williams" class="logo">
+                    <ul class="names">
+                        <li>Barry Davis</li>
+                        <li>AJ Sowe</li>
+                        <li>Turan Kavak</li>
+                        <li>Ram Sankaralingam</li>
+                        <li>Rodrigo Careaga</li>
+                        <li>Clement Fischer</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 6 - Haas</div>
+                    <img src="haas.png" alt="Haas" class="logo">
+                    <ul class="names">
+                        <li>Anna Tauriello</li>
+                        <li>Dan Nukajam</li>
+                        <li>Wadhah Ben Aissa</li>
+                        <li>Erkin Kucuk</li>
+                        <li>Maria Revuelta Yus</li>
+                        <li>Freda Santana Guzman</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 7 - Aston Martin</div>
+                    <img src="aston.png" alt="Aston Martin" class="logo">
+                    <ul class="names">
+                        <li>Dominik Vachal</li>
+                        <li>Mark Finklaire</li>
+                        <li>Adam Marshall</li>
+                        <li>Michael Bean</li>
+                        <li>Javier Ortiz López</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 8 - Racing Bulls</div>
+                    <img src="vcarb.png" alt="Racing Bulls" class="logo">
+                    <ul class="names">
+                        <li>Florian Röhrle</li>
+                        <li>Rhys Mason</li>
+                        <li>Ali Amri</li>
+                        <li>Gary Jones</li>
+                        <li>Stacey Vivian</li>
+                        <li>Ben Haley</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 9 - Sauber</div>
+                    <img src="sauber.png" alt="Sauber" class="logo">
+                    <ul class="names">
+                        <li>Julian Reinholz</li>
+                        <li>Kassondra Lages</li>
+                        <li>Christina Deligiorgi</li>
+                        <li>Krzysztof Spikowski</li>
+                        <li>Francisco Munoz</li>
+                        <li>Qais Yacoub</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 10 - Alpine</div>
+                    <img src="alpine.png" alt="Alpine" class="logo">
+                    <ul class="names">
+                        <li>Amer Melhem</li>
+                        <li>Kevin O'Toole</li>
+                        <li>Dirk Bremen</li>
+                        <li>Cian Hogan</li>
+                        <li>Pete Derry</li>
+                        <li>Daniel Gomez Blanco</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 11 - Kick Sauber</div>
+                    <img src="kick.png" alt="Kick Sauber" class="logo">
+                    <ul class="names">
+                        <li>Dorian Dumas</li>
+                        <li>Ross Montgomery</li>
+                        <li>Shanice Carey</li>
+                        <li>Disha Thamman</li>
+                        <li>Valerio Cavallo</li>
+                        <li>Luke Cater</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 12 - Honda</div>
+                    <img src="honda.png" alt="Honda" class="logo">
+                    <ul class="names">
+                        <li>Emmanuel Agyekum Prince</li>
+                        <li>Yatharth Sharma</li>
+                        <li>Roberto Riga</li>
+                        <li>Steve Cunnew</li>
+                        <li>James Buchanan</li>
+                        <li>Kristin Lampka</li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="table-number">Table 13 - Alpha Tauri</div>
+                    <img src="at.png" alt="Alpha Tauri" class="logo">
+                    <ul class="names">
+                        <li>Giorgio Gennero</li>
+                        <li>Ana McCormack</li>
+                        <li>Ralph Hickey</li>
+                        <li>Bhavna Sandhu</li>
+                        <li>Diogo Daniel Pacheco</li>
+                        <li>Eric Van Caster</li>
+                    </ul>
+                </div>
+                <!-- Add more tables up to 14 similarly -->
+                <div class="table">
+                    <div class="table-number">Table 14 - Renault</div>
+                    <img src="renault.png" alt="Team Logo" class="logo">
+                    <ul class="names">
+                        <li>Maarten Brokking</li>
+                        <li>Daniel Garnautan</li>
+                        <li>Dillon Ritchie</li>
+                        <li>Darren Doyle</li>
+                        <li>Mat Wilk</li>
+                        <li>Niju George</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <img src="f1Footer1.png" style="max-width: 40%;">
+          <img src="https://newrelic.com/themes/custom/erno/assets/mediakit/new_relic_logo_vertical_white.png" style="max-width: 20%; margin-left: 50px;">
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.js"></script>
+</body>
+</html>
